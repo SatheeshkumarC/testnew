@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Application Cloud Readiness Documentation</title>
+		<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link rel="shortcut icon" href="./reportResources/images/cognizant_favicon.ico">
+		<script src="./reportResources/js/jquery3.2.min.js"></script>
+		<link rel="stylesheet" href="./reportResources/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="./reportResources/css/bootstrap-theme.min.css" />
+		<link rel="stylesheet" href="./reportResources/css/vsm.css" />
+		<link rel="stylesheet" href="./reportResources/css/help.css" />
+		<!--link rel="stylesheet" href="./reportResources/css/materialize.min.css"-->
+		<script src="./reportResources/js/bootstrap.min.js"></script>
+		<script src="./reportResources/js/help.js"></script>
+	</head>
+	<body>
+		<div class="wrapper">
+			<nav id="sidebar">
+				<div class="sidebar-header">
+					<h3>VSM</h3>
+				</div>				
+				<ul>
+					<li class="subHead"  data-section="assess">
+						<a href="#detailSection"  data-toggle="collapse" aria-expanded="false">Assessment Summary</a>
+						<ul id="detailSection" class="collapse">
+							<li data-section="tech">Technology</li>
+							<li data-section="general">General</li>
+							<li data-section="cloudSuit">Cloud Suitability</li>
+							<li data-section="migComplex">Migration Complexity</li>
+							<li data-section="extInter">External Interfaces</li>
+						</ul>
+					</li>
+					<li class="subHead" data-section="migRecomm">
+						<a href="#migRecommSection"  data-toggle="collapse" aria-expanded="false">Migration Strategy Recommendation</a>
+						<ul id="migRecommSection" class="collapse">
+							<li data-section="rehost">ReHost</li>
+							<li data-section="replatform">RePlatform</li>
+							<li data-section="refactor">ReFactor</li>
+							<li data-section="rebuild">Rebuild</li>
+						</ul>
+					</li>
+					<li class="subHead" data-section="antiPattern">
+						<a href="#anitPatternsSection"  data-toggle="collapse" aria-expanded="false">Cloud Anti-Patterns Analysis</a>
+						<ul id="anitPatternsSection" class="collapse">
+							<li data-section="antiSumm">Anti Patterns Summary</li>
+							<li data-section="antiDetail">Anti Patterns</li>
+							<li data-section="knownIssue">Known Issues</li>
+						</ul>
+					</li>
+					<li class="subHead" data-section="cloudCheck">
+					<a href="#cloudSuitSection"  data-toggle="collapse" aria-expanded="false">Cloud Suitability</a>
+						<ul id="cloudSuitSection" class="collapse">
+							<li data-section="checkList">Cloud Suitability Checklist</li>
+						</ul>
+					</li>
+				</ul>				
+			</nav>
+			<div id="content">
+				<div class="header">
+					<h3> VSM - Application to Cloud Analyzer </h3>
+				</div>
+				<div class="secContent assess" data-section="assess">
+					<h4> Assessment Summary </h4>
+					<div class="secSubContent tech" data-section="tech">
+						<h4>Technology</h4>
+						<p><b>Primary Language -</b> Primary Language contains the list of programming languages used in the application such as Java, .Net etc,...</p>
+						<p><b>Secondary Language -</b> Secondary Language contains the list of languages used in the application that are not listed in the Primary Language like CSS, JSP ,HTML etc,...</p>
+						<p><b>App Server -</b> App Server contains the list of all the application servers used in the application like Weblogic, Websphere, Tomcat, JBoss etc,...</p>
+						<p><b>Primary Framework -</b> Primary Framework contains the list of primary frameworks used in the application like Spring, Struts , Hibernate etc,...</p>
+						<p><b>Secondary Framework -</b> Secondary Framework contains the list of secondary frameworks used in the application like Play, Grails etc,...</p>
+						<p><b>Database -</b> Database contains the list of all the databases used in the application like MySQL, Oracle, SQL Server etc,...</p>
+						<p><b>Authentication -</b> Authentication contains the list of the authentication techniques used in the application like Spring security etc,..</p>
+						<p><b>COTS Products -</b> COTS Products contain the list of all the vendor or third-party software that are used by the application like Salesforce, OpenCMS etc,...</p>
+						<p><b>Libraries -</b> Libraries contain the list of all the libraries used in the application like Apache commons-logging, Google GSON etc,...</p>
+					</div>
+					<div class="secSubContent general" data-section="general">
+						<h4>General</h4>
+						<p><b>Lines of Code - </b> Lines of Code contains the total number of lines of code in the application. Moreover, it is subdivided based on the programming languages along with the number of lines of code corresponding to each programming language.</p>
+						<p><b>App Classes - </b> Classes correspond to the number of app classes used in the application.</p>
+						<p><b>Test Cases - </b> Test cases denote the number of test cases written for the application like Junit test cases, TestNG test cases etc,...</p>						
+					</div>
+					<div class="secSubContent cloudSuit" data-section="cloudSuit">
+						<h4>Cloud Suitability</h4>
+						<p><b>Cloud Suitability - </b> Cloud Suitability denotes  the suitability of the application to fit into the cloud in percentage</p>
+					</div>
+					<div class="secSubContent migComplex" data-section="migComplex">
+						<h4>Migration Complexity</h4>
+						<p><b>Migration Complexity - </b> Migration Complexity represents the complexity level in migrating the application to cloud. It is categorised as Low, Medium and High.</p>
+						<p><b>Migration Complexity Points - </b> Migration Complexity Points denote the estimated effort needed in points to migrate the application to cloud.</p>
+						<p><b>Code Modularity - </b> Code Modularity rating is calculated based on the number of lines of code, Cohesion and Coupling values.</p><p><b>Code Complexity - </b> Code Complexity denotes the complexity of the application code.</p>
+					</div>
+					<div class="secSubContent extInter" data-section="extInter">
+						<h4>External Interfaces/ Dependencies</h4>
+						<p><b>External Interfaces/ Dependencies - </b> External Interfaces/ Dependencies contain the list of external dependencies used by the application like SMTP ,LDAP etc,..</p>						
+					</div>
+				</div>
+
+				<div class="secContent migRecomm" data-section="migRecomm">
+					<h4> Migration Strategy Recommmendations</h4>
+					<div class="secSubContent rehost" data-section="rehost">
+						<h4>Rehost</h4>
+						<p>Rehost follows the Lift and Shift strategy</p>
+					</div>
+					<div class="secSubContent replatform" data-section="replatform">
+						<h4>Replatform</h4>
+						<p>Replatform requires few changes to be made to the code before migrating it to the cloud</p>
+					</div>
+					<div class="secSubContent refactor" data-section="refactor">
+						<h4>Refactor</h4>
+						<p>Refactor Strategy needs the code to be modified before migrating it to the cloud</p>
+					</div>
+					<div class="secSubContent rebuild" data-section="rebuild">
+						<h4>Rebuild</h4>
+						<p>Rebuild Strategy needs the entire application to be rebuilt since the existing codebase will not fit into the cloud</p>
+					</div>
+				</div>
+
+				<div class="secContent antiPattern" data-section="antiPattern">
+					<h4> Cloud Anti-Patterns Analysis </h4>
+					<div class="secSubContent antiSumm" data-section="antiSumm">
+						<h4>Anti-Patterns Summary</h4>
+						<p><b>Anti-Patterns Summary - </b> Anti-Patterns Summary gives the summary of the anti-patterns found in the application and lists them based on their type and sub type. A short description of the detected anti-pattern along with the recommendation is also provided. Total anti-patterns correspond to the number of usages of each anti-pattern in the application</p>
+					</div>
+					<div class="secSubContent antiDetail" data-section="antiDetail">
+						<h4>Anti-Patterns Detail</h4>
+						<p><b>Anti-Patterns Detail - </b> Anti-Patterns Detail gives the complete detail of the anti-patterns listed in the <b>Anti_Patterns Summary</b> along with the location details of all the anti-patterns</p>
+					</div>
+					<div class="secSubContent knownIssue" data-section="knownIssue">
+						<h4>Known Issues</h4>
+						<p><b>Known Issues - </b> Known Issues gives the list of all known issues like exception handling, log files etc., that are used in the application</p>
+					</div>
+				</div>
+
+				<div class="secContent cloudCheck" data-section="cloudCheck">
+					<h4> Cloud Suitability Checklist </h4>
+					<div class="secSubContent checkList" data-section="checkList">
+						<h4>Cloud Suitability Checklist</h4>
+						<p>Cloud Suitability Checklist lists the various standards with respect to cloud. It then classifies the application based on each standard as low, medium, high or not applicable</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
